@@ -60,7 +60,7 @@ public class Main {
                 for(int k = 0; k < m; k++) {
                     int pi=0;
                     int pj=0; //i학생 j학생의 점수
-                    for(int s = 0; s < n; s++) {
+                    for(int s = 0; s < n; s++) { //등수
                         if(arr[k][s]==i) pi = s;
                         if(arr[k][s]==j) pj = s;
                     }
@@ -74,7 +74,6 @@ public class Main {
             }
 
         }
-
 
         return answer;
     }
