@@ -16,8 +16,16 @@ public class Main {
 //        int factorial = getFactorial(num);
 //        System.out.println("factorial = " + factorial);
 
+        //피보나치 방법1)
+//        for(int i = 1; i <= num; i++) {
+//            System.out.print(getFibonacci(i) + " ");
+//        }
+
+        //피보나치 방법2)
+        fibo = new int[num+1];
+        DFS(num);
         for(int i = 1; i <= num; i++) {
-            System.out.print(getFibonacci(i) + " ");
+            System.out.print(fibo[i] + " ");
         }
     }
 
@@ -67,6 +75,17 @@ public class Main {
             return 1;
         } else {
             return getFibonacci(num - 2) + getFibonacci(num - 1);
+        }
+    }
+
+    static int[] fibo;
+    public static int DFS(int n) {
+        if(n==1) {
+            return fibo[n] = 1;
+        } else if(n == 2) {
+            return fibo[n] = 1;
+        } else {
+            return fibo[n] = DFS(n - 2) + DFS(n - 1);
         }
     }
 
