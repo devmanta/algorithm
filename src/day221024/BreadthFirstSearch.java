@@ -16,6 +16,9 @@ class Node {
     }
 }
 
+/**
+ * 이진트리 레벨탐색
+ */
 public class BreadthFirstSearch {
 
     Node root;
