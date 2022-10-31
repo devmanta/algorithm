@@ -37,7 +37,7 @@ public class DFS {
      6
      */
 
-    static int n, m, answer = 0;
+    static int n, answer = 0;
     static int[][] graph;
     static int[] ch;
 
@@ -58,7 +58,7 @@ public class DFS {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         n = s.nextInt();
-        m = s.nextInt();
+        int m = s.nextInt();
 
         graph = new int[n + 1][m + 1];
 
