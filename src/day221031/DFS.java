@@ -42,7 +42,7 @@ public class DFS {
     static int[] ch;
 
     public static void DFS(int v) {
-        if(v == n) {
+        if(v == n) { // n번 정점으로 가는 가지수를 구하는거니까 노드 돌다가 n번째가 되면 n번으로 가는 경우의 수가 되는 것임
             answer++;
         } else {
             for(int i = 1; i <= n; i++) {
