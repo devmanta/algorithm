@@ -46,7 +46,7 @@ public class DFS {
             answer++;
         } else {
             for(int i = 1; i <= n; i++) {
-                if(ch[i] == 1 && graph[v][i] == 1) {
+                if(ch[i] == 0 && graph[v][i] == 1) {
                     ch[i] = 1;
                     DFS(i);
                     ch[i] = 0;
