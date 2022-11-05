@@ -21,7 +21,7 @@ public class 부분집합 {
     static int[] ch;
 
     public static void DFS(int L) {
-        if(L == n + 1) {
+        if(L == n + 1) { //주어진 숫자가 3이면, 3까지만 뻗으면 되니깐, L=4이 되었을 때, 그만돌아야함.
             StringBuilder sb = new StringBuilder();
             for(int i = 1; i <=n ; i++) {
                 if(ch[i] == 1) {
