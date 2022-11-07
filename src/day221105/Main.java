@@ -40,6 +40,7 @@ public class Main {
         }
 
         if(L == n) { // 트리 뻗어 나가다가, n번째가 되면 이제 확인 해야함 (노드의 수가 끝이니까, 다 뻗어 나간 거임 마지막인 것임)
+            // L = level, 각 레벨 별로, 해당 값을 포함 한다, 안한다로 뻗어 나간다.
             if(total - sum == sum) {
                 answer = "YES";
                 flag = true;
